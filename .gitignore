@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # Repo
-./config.js
+config.js
