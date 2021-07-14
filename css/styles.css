@@ -1,0 +1,61 @@
+html,
+body {
+  background-color: red;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#app .spinner {
+  display: none;
+}
+
+#app .spinner.active {
+  display: block;
+}
+
+#app .spinner img {
+  width: 80px;
+}
+
+#app .wrapper-images {
+  background-color: black;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#app .wrapper-images .container-image {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  padding: 12px;
+  margin: 12px;
+  background-color: white;
+}
+
+#app .wrapper-images .container-image .image-character {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+h1 {
+  color: white;
+}
+
+h2 {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: red;
+  padding: 0 0 10px 0;
+}

@@ -14,7 +14,7 @@ const myFetch = (endpoint) => {
   });
 
   const header = {
-    mode: "cors",
+    "Access-Control-Allow-Origin": "*",
   };
 
   return fetch(`${URL_MARVEL}${endpoint}?${queryParams}`, header).then(
@@ -22,7 +22,7 @@ const myFetch = (endpoint) => {
       if (data.status !== 200 && !data.ok) {
         console.error("[ERROR]: No se ha podido conectar, error", data);
       }
-      return data;
+      return data.json();
     }
   );
 };
